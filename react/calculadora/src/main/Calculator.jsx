@@ -21,6 +21,7 @@ export default class Calculator extends Component {
         this.clearMemory = this.clearMemory.bind(this)
         this.setOperation = this.setOperation.bind(this)
         this.addDigit = this.addDigit.bind(this)
+        this.agora = this.agora.bind(this)
     }
 
     clearMemory() {
@@ -69,7 +70,7 @@ export default class Calculator extends Component {
             const values = [...this.state.values]
             values[i] = newValue
             this.setState({values})
-            console.log(values)
+            console.log(n)
         }
     }
 
